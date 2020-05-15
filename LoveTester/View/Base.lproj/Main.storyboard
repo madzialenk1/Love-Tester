@@ -46,7 +46,7 @@
                                         <rect key="frame" x="0.0" y="0.0" width="414" height="257.33333333333331"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Love Tester" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Cm-12-pPJ" customClass="CLTypingLabel" customModule="CLTypingLabel">
-                                                <rect key="frame" x="207" y="128.66666666666666" width="0.0" height="0.0"/>
+                                                <rect key="frame" x="1" y="90.333333333333343" width="412" height="76.666666666666657"/>
                                                 <fontDescription key="fontDescription" name="Verdana-Bold" family="Verdana" pointSize="63"/>
                                                 <color key="textColor" red="0.63921568627450975" green="0.36470588235294116" blue="0.50588235294117645" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <color key="highlightedColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -307,8 +307,7 @@
                                                         <inset key="contentEdgeInsets" minX="50" minY="0.0" maxX="0.0" maxY="8"/>
                                                         <state key="normal" title="Button" image="envelope"/>
                                                         <connections>
-                                                            <action selector="checkAdvicePressed:" destination="Ina-RN-6pc" eventType="touchUpInside" id="zQs-bM-Bql"/>
-                                                            <segue destination="J5g-fq-ehM" kind="show" identifier="checkAdvice" id="RC2-nj-8iA"/>
+                                                            <segue destination="JGz-Wx-jM1" kind="show" identifier="toAdvice" id="H5n-N9-okl"/>
                                                         </connections>
                                                     </button>
                                                 </subviews>
@@ -594,6 +593,49 @@
             </objects>
             <point key="canvasLocation" x="3015.9420289855075" y="-133.25892857142856"/>
         </scene>
+        <!--Advice View Controller-->
+        <scene sceneID="HmD-YQ-eTv">
+            <objects>
+                <viewController id="JGz-Wx-jM1" customClass="AdviceViewController" customModule="LoveTester" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="eBX-9d-RbQ">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" sectionIndexMinimumDisplayRowCount="1" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="KMz-w2-3D0">
+                                <rect key="frame" x="0.0" y="88" width="414" height="774"/>
+                                <color key="backgroundColor" red="0.95369178060000004" green="0.712302506" blue="0.98653024440000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="separatorColor" red="0.90391248459999995" green="0.71737581490000002" blue="0.81814211609999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="sectionIndexBackgroundColor" red="0.90391248459999995" green="0.71737581490000002" blue="0.81814211609999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="ReusableCell" id="Jw1-mi-zTM">
+                                        <rect key="frame" x="0.0" y="28" width="414" height="43.666667938232422"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Jw1-mi-zTM" id="0HF-jm-alk">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="43.666667938232422"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="br6-hg-iPp" firstAttribute="bottom" secondItem="KMz-w2-3D0" secondAttribute="bottom" id="JN1-HL-VaE"/>
+                            <constraint firstItem="KMz-w2-3D0" firstAttribute="top" secondItem="br6-hg-iPp" secondAttribute="top" id="RMS-FR-UvA"/>
+                            <constraint firstItem="KMz-w2-3D0" firstAttribute="leading" secondItem="br6-hg-iPp" secondAttribute="leading" id="S0H-7j-MC6"/>
+                            <constraint firstItem="br6-hg-iPp" firstAttribute="trailing" secondItem="KMz-w2-3D0" secondAttribute="trailing" id="Sx3-yK-fTN"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="br6-hg-iPp"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="k4f-lU-wDM"/>
+                    <connections>
+                        <outlet property="tableView" destination="KMz-w2-3D0" id="kAI-gH-gSc"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tAZ-0f-PXM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3207" y="1147"/>
+        </scene>
         <!--View Controller-->
         <scene sceneID="D07-0E-6tj">
             <objects>
@@ -609,22 +651,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xT2-uz-7Sn" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3675" y="447"/>
-        </scene>
-        <!--View Controller-->
-        <scene sceneID="xED-96-EAR">
-            <objects>
-                <viewController id="J5g-fq-ehM" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="dOp-eb-Dz8">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="0.90391248459999995" green="0.71737581490000002" blue="0.81814211609999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <viewLayoutGuide key="safeArea" id="4mk-Pv-tco"/>
-                    </view>
-                    <navigationItem key="navigationItem" id="CB1-vg-4BY"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="0F3-ZP-EdM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="3375" y="1110"/>
         </scene>
         <!--RegisterController-->
         <scene sceneID="6a1-gV-9XH">

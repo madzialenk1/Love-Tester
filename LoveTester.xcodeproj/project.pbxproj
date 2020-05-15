@@ -15,7 +15,8 @@
 		0C4D976B245D8E08003BDBDB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0C4D976A245D8E08003BDBDB /* Assets.xcassets */; };
 		0C4D976E245D8E08003BDBDB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0C4D976C245D8E08003BDBDB /* LaunchScreen.storyboard */; };
 		0C51CBF2246B420D00C25286 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C51CBF1246B420D00C25286 /* Item.swift */; };
-		0C581659246E1939004F7F58 /* popUp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C581658246E1939004F7F58 /* popUp.swift */; };
+		0C58165D246F2506004F7F58 /* AdviceItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C58165C246F2506004F7F58 /* AdviceItem.swift */; };
+		0C581663246F2B06004F7F58 /* AdviceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C581662246F2B06004F7F58 /* AdviceViewController.swift */; };
 		0C9FC9E3246966BD00D54F4E /* TestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C9FC9E2246966BD00D54F4E /* TestViewController.swift */; };
 		0C9FC9E524696A0B00D54F4E /* TestManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C9FC9E424696A0B00D54F4E /* TestManager.swift */; };
 		0C9FC9E92469881D00D54F4E /* TestBrain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C9FC9E82469881D00D54F4E /* TestBrain.swift */; };
@@ -38,7 +39,8 @@
 		0C4D976D245D8E08003BDBDB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0C4D976F245D8E08003BDBDB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0C51CBF1246B420D00C25286 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
-		0C581658246E1939004F7F58 /* popUp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = popUp.swift; sourceTree = "<group>"; };
+		0C58165C246F2506004F7F58 /* AdviceItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdviceItem.swift; sourceTree = "<group>"; };
+		0C581662246F2B06004F7F58 /* AdviceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdviceViewController.swift; sourceTree = "<group>"; };
 		0C9FC9E2246966BD00D54F4E /* TestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestViewController.swift; sourceTree = "<group>"; };
 		0C9FC9E424696A0B00D54F4E /* TestManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestManager.swift; sourceTree = "<group>"; };
 		0C9FC9E82469881D00D54F4E /* TestBrain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestBrain.swift; sourceTree = "<group>"; };
@@ -69,6 +71,7 @@
 			children = (
 				0C9FC9E424696A0B00D54F4E /* TestManager.swift */,
 				0C9FC9E82469881D00D54F4E /* TestBrain.swift */,
+				0C58165C246F2506004F7F58 /* AdviceItem.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -79,7 +82,6 @@
 				0C4D9767245D8E05003BDBDB /* Main.storyboard */,
 				0C4D976C245D8E08003BDBDB /* LaunchScreen.storyboard */,
 				0C9FC9EA246A0B0300D54F4E /* ButtonExtension.swift */,
-				0C581658246E1939004F7F58 /* popUp.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -92,6 +94,7 @@
 				0CF4561924609D09004CBEC1 /* LoginViewController.swift */,
 				0CF4561F246207E7004CBEC1 /* MenuViewController.swift */,
 				0C9FC9E2246966BD00D54F4E /* TestViewController.swift */,
+				0C581662246F2B06004F7F58 /* AdviceViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -283,13 +286,14 @@
 			files = (
 				0C9FC9E3246966BD00D54F4E /* TestViewController.swift in Sources */,
 				0C4D9766245D8E05003BDBDB /* ViewController.swift in Sources */,
-				0C581659246E1939004F7F58 /* popUp.swift in Sources */,
 				0CF45620246207E7004CBEC1 /* MenuViewController.swift in Sources */,
 				0C4D9762245D8E05003BDBDB /* AppDelegate.swift in Sources */,
 				0C4D9764245D8E05003BDBDB /* SceneDelegate.swift in Sources */,
 				0CF4561A24609D09004CBEC1 /* LoginViewController.swift in Sources */,
+				0C58165D246F2506004F7F58 /* AdviceItem.swift in Sources */,
 				0C51CBF2246B420D00C25286 /* Item.swift in Sources */,
 				0CF4561824609CEA004CBEC1 /* RegisterViewController.swift in Sources */,
+				0C581663246F2B06004F7F58 /* AdviceViewController.swift in Sources */,
 				0C9FC9EB246A0B0300D54F4E /* ButtonExtension.swift in Sources */,
 				0C9FC9E524696A0B00D54F4E /* TestManager.swift in Sources */,
 				0C9FC9E92469881D00D54F4E /* TestBrain.swift in Sources */,
