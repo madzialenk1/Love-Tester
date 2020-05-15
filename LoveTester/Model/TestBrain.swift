@@ -56,6 +56,12 @@ struct TestBrain {
         return test[questionNumber].question
     }
     
+    mutating func previousQuestion(){
+        if questionNumber > 0 {
+            questionNumber -= 1
+        }
+    }
+    
     mutating func nextQuestion (){
         
         if questionNumber + 1 < test.count {

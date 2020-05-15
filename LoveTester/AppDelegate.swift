@@ -8,6 +8,7 @@
 
 import UIKit
 import Firebase
+import RealmSwift
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -16,6 +17,36 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         FirebaseApp.configure()
+        print(Realm.Configuration.defaultConfiguration.fileURL)
+        let config = Realm.Configuration(
+
+            schemaVersion: 1,
+
+            migrationBlock: { migration, oldSchemaVersion in
+
+                if (oldSchemaVersion < 1) {
+
+                }
+            })
+
+        Realm.Configuration.defaultConfiguration = config
+        
+        
+        do {
+        let realm = try!  Realm()
+            try? realm.write {
+                realm.deleteAll()
+            }
+
+        } catch {
+            print(error.localizedDescription)
+        }
+        
+        
+        
+        
+        
+        
         return true
     }
 

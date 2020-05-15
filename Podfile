@@ -7,4 +7,5 @@ target 'LoveTester' do
 
   pod 'CLTypingLabel'
   pod 'Firebase/Auth'
+  pod 'RealmSwift' 
 end

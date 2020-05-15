@@ -14,8 +14,9 @@ class MenuViewController: UIViewController {
     @IBOutlet weak var statisticsView: UIView!
     @IBOutlet weak var adviceView: UIView!
     @IBOutlet weak var logoutView: UIView!
-    
+ 
     override func viewDidLoad() {
+        super.viewDidLoad()
         testView.layer.cornerRadius = testView.frame.size.height * 0.40
         statisticsView.layer.cornerRadius = statisticsView.frame.size.height * 0.40
         adviceView.layer.cornerRadius = adviceView.frame.size.height * 0.40
@@ -27,14 +28,9 @@ class MenuViewController: UIViewController {
     
     
     
-    @IBAction func startTestPressed(_ sender: UIButton) {
-        performSegue(withIdentifier: "startTest", sender: self)
-    }
+ 
     
-    @IBAction func showStatisticsPressed(_ sender: UIButton) {
-        performSegue(withIdentifier: "showStatistics", sender: self)
-        
-    }
+
     
     @IBAction func checkAdvicePressed(_ sender: UIButton) {
         performSegue(withIdentifier: "checkAdvice", sender: self)
