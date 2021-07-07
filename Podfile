@@ -8,4 +8,9 @@ target 'LoveTester' do
   pod 'CLTypingLabel'
   pod 'Firebase/Auth'
   pod 'RealmSwift' 
+  pod 'Charts'
+  pod 'GoogleSignIn'
+  pod 'FBSDKLoginKit'
+  pod 'Firebase/Database'
+  
 end
