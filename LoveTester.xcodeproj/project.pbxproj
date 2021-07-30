@@ -254,7 +254,11 @@
 				0C4D975C245D8E05003BDBDB /* Resources */,
 				8A8EABDCF0332F6FBD454BDC /* [CP] Embed Pods Frameworks */,
 				0C148BF32479E94000DD6B87 /* Embed Frameworks */,
+<<<<<<< HEAD
 				8823A8EC589F300E0F445B5E /* [CP] Copy Pods Resources */,
+=======
+				77FF0E95C1D3F1A18B2BB4F1 /* [CP] Copy Pods Resources */,
+>>>>>>> 7d0a0bd73650c5b9d1f3cb1618c45e9ea3df9b07
 			);
 			buildRules = (
 			);
@@ -315,6 +319,23 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		77FF0E95C1D3F1A18B2BB4F1 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-LoveTester/Pods-LoveTester-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-LoveTester/Pods-LoveTester-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-LoveTester/Pods-LoveTester-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		8569A11EA5F0DFE36890638F /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;

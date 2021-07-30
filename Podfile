@@ -9,8 +9,16 @@ target 'LoveTester' do
   pod 'Firebase/Auth'
   pod 'RealmSwift' 
   pod 'Charts'
+<<<<<<< HEAD
   pod 'GoogleSignIn', '~> 5.0.2'
   pod 'FBSDKLoginKit'
   pod 'Firebase/Database'
   
 end
+=======
+  pod 'GoogleSignIn'
+  pod 'FBSDKLoginKit'
+  pod 'Firebase/Database'
+  
+end
+>>>>>>> 7d0a0bd73650c5b9d1f3cb1618c45e9ea3df9b07

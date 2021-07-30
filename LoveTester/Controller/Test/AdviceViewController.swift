@@ -17,7 +17,7 @@ class AdviceViewController: UIViewController {
     let realm = try! Realm()
     var checked: Results<Person>!
     var checkedArray = List<Bool>()
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -27,12 +27,14 @@ class AdviceViewController: UIViewController {
         
         tableView.register(UINib(nibName: "AdviceCell", bundle: nil), forCellReuseIdentifier: "cell")
         tableView.rowHeight = UITableView.automaticDimension
+
         initTheTableView()
         
         
     }
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(true)
+
         
     }
     
@@ -42,13 +44,19 @@ class AdviceViewController: UIViewController {
         
     }
     override func viewWillDisappear(_ animated: Bool) {
+
         
         super.viewWillDisappear(true)
         try! realm.write {
+
+        super.viewWillDisappear(true)
+        try! realm.write{
+
             checked[0].check?.setValue(checkedArray,forKey: "checked")
         }
         
     }
+}
     
     func initTheTableView(){    
         

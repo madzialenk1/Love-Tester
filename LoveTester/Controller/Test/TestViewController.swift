@@ -93,7 +93,11 @@ class TestViewController: UIViewController {
     func closeTheTest(){
         
         if testBrain.questionNumber == 6 {
+<<<<<<< HEAD
             
+=======
+            normalMessage()
+>>>>>>> 7d0a0bd73650c5b9d1f3cb1618c45e9ea3df9b07
             createBarButton()
             leftArrowButton.isHidden = true
             if (persons[0].test?.questions.isEmpty)! {
