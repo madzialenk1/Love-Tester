@@ -7,12 +7,9 @@
 //
 
 import UIKit
+
 struct Test {
     let question: String
-    var answer: String
-    init(q: String, a: String) {
-            question = q
-            answer = a
-    }
+    var answer: String?
 }
 

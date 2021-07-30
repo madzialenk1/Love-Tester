@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0C148BF52479E98400DD6B87 /* StatisticsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C148BF42479E98400DD6B87 /* StatisticsViewController.swift */; };
 		0C290E51245DA044009DAADD /* AbrilFatface-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0C290E50245DA044009DAADD /* AbrilFatface-Regular.ttf */; };
 		0C4D9762245D8E05003BDBDB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C4D9761245D8E05003BDBDB /* AppDelegate.swift */; };
 		0C4D9764245D8E05003BDBDB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C4D9763245D8E05003BDBDB /* SceneDelegate.swift */; };
@@ -17,10 +18,16 @@
 		0C51CBF2246B420D00C25286 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C51CBF1246B420D00C25286 /* Item.swift */; };
 		0C58165D246F2506004F7F58 /* AdviceItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C58165C246F2506004F7F58 /* AdviceItem.swift */; };
 		0C581663246F2B06004F7F58 /* AdviceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C581662246F2B06004F7F58 /* AdviceViewController.swift */; };
+		0C84531F248C23F500179B9F /* Description.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C84531E248C23F500179B9F /* Description.swift */; };
+		0C8A4D922481A7E9006E87CF /* Spinner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C8A4D912481A7E9006E87CF /* Spinner.swift */; };
 		0C9FC9E3246966BD00D54F4E /* TestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C9FC9E2246966BD00D54F4E /* TestViewController.swift */; };
 		0C9FC9E524696A0B00D54F4E /* TestManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C9FC9E424696A0B00D54F4E /* TestManager.swift */; };
 		0C9FC9E92469881D00D54F4E /* TestBrain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C9FC9E82469881D00D54F4E /* TestBrain.swift */; };
 		0C9FC9EB246A0B0300D54F4E /* ButtonExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C9FC9EA246A0B0300D54F4E /* ButtonExtension.swift */; };
+		0CB49FD0257D7010003475C5 /* AdviceCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CB49FCE257D7010003475C5 /* AdviceCell.swift */; };
+		0CB49FD1257D7010003475C5 /* AdviceCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0CB49FCF257D7010003475C5 /* AdviceCell.xib */; };
+		0CC3468D24B63C210062094D /* LoginViaGoogleAndFacebook.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CC3468C24B63C210062094D /* LoginViaGoogleAndFacebook.swift */; };
+		0CC3469424BE015F0062094D /* Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CC3469324BE015F0062094D /* Alert.swift */; };
 		0CF4561824609CEA004CBEC1 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CF4561724609CEA004CBEC1 /* RegisterViewController.swift */; };
 		0CF4561A24609D09004CBEC1 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CF4561924609D09004CBEC1 /* LoginViewController.swift */; };
 		0CF4561E2460DDD2004CBEC1 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0CF4561D2460DDD2004CBEC1 /* GoogleService-Info.plist */; };
@@ -28,7 +35,21 @@
 		D8D26003691562724BF54752 /* Pods_LoveTester.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C982A8425020C571AA904B0A /* Pods_LoveTester.framework */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		0C148BF32479E94000DD6B87 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		0C148BF42479E98400DD6B87 /* StatisticsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatisticsViewController.swift; sourceTree = "<group>"; };
 		0C290E50245DA044009DAADD /* AbrilFatface-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "AbrilFatface-Regular.ttf"; path = "Abril_Fatface/AbrilFatface-Regular.ttf"; sourceTree = SOURCE_ROOT; };
 		0C4D975E245D8E05003BDBDB /* LoveTester.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LoveTester.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0C4D9761245D8E05003BDBDB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -41,10 +62,16 @@
 		0C51CBF1246B420D00C25286 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 		0C58165C246F2506004F7F58 /* AdviceItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdviceItem.swift; sourceTree = "<group>"; };
 		0C581662246F2B06004F7F58 /* AdviceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdviceViewController.swift; sourceTree = "<group>"; };
+		0C84531E248C23F500179B9F /* Description.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Description.swift; sourceTree = "<group>"; };
+		0C8A4D912481A7E9006E87CF /* Spinner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Spinner.swift; sourceTree = "<group>"; };
 		0C9FC9E2246966BD00D54F4E /* TestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestViewController.swift; sourceTree = "<group>"; };
 		0C9FC9E424696A0B00D54F4E /* TestManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestManager.swift; sourceTree = "<group>"; };
 		0C9FC9E82469881D00D54F4E /* TestBrain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestBrain.swift; sourceTree = "<group>"; };
 		0C9FC9EA246A0B0300D54F4E /* ButtonExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonExtension.swift; sourceTree = "<group>"; };
+		0CB49FCE257D7010003475C5 /* AdviceCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdviceCell.swift; sourceTree = "<group>"; };
+		0CB49FCF257D7010003475C5 /* AdviceCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AdviceCell.xib; sourceTree = "<group>"; };
+		0CC3468C24B63C210062094D /* LoginViaGoogleAndFacebook.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViaGoogleAndFacebook.swift; sourceTree = "<group>"; };
+		0CC3469324BE015F0062094D /* Alert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alert.swift; sourceTree = "<group>"; };
 		0CF4561724609CEA004CBEC1 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		0CF4561924609D09004CBEC1 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		0CF4561D2460DDD2004CBEC1 /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "GoogleService-Info.plist"; sourceTree = SOURCE_ROOT; };
@@ -69,9 +96,10 @@
 		0C290E4C245D91F9009DAADD /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				0C9FC9E424696A0B00D54F4E /* TestManager.swift */,
-				0C9FC9E82469881D00D54F4E /* TestBrain.swift */,
-				0C58165C246F2506004F7F58 /* AdviceItem.swift */,
+				0CC3468E24BDE7380062094D /* TestModel */,
+				0C51CBF0246B41F400C25286 /* DataModel */,
+				0CC3468F24BDE7A00062094D /* AdviceModel */,
+				0CC3469024BDE7B40062094D /* DescriptionModel */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -82,6 +110,10 @@
 				0C4D9767245D8E05003BDBDB /* Main.storyboard */,
 				0C4D976C245D8E08003BDBDB /* LaunchScreen.storyboard */,
 				0C9FC9EA246A0B0300D54F4E /* ButtonExtension.swift */,
+				0C8A4D912481A7E9006E87CF /* Spinner.swift */,
+				0CC3469324BE015F0062094D /* Alert.swift */,
+				0CB49FCE257D7010003475C5 /* AdviceCell.swift */,
+				0CB49FCF257D7010003475C5 /* AdviceCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -90,11 +122,8 @@
 			isa = PBXGroup;
 			children = (
 				0C4D9765245D8E05003BDBDB /* ViewController.swift */,
-				0CF4561724609CEA004CBEC1 /* RegisterViewController.swift */,
-				0CF4561924609D09004CBEC1 /* LoginViewController.swift */,
-				0CF4561F246207E7004CBEC1 /* MenuViewController.swift */,
-				0C9FC9E2246966BD00D54F4E /* TestViewController.swift */,
-				0C581662246F2B06004F7F58 /* AdviceViewController.swift */,
+				0CC3469124BDE7D30062094D /* Authentication */,
+				0CC3469224BDE7F40062094D /* Test */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -128,7 +157,6 @@
 		0C4D9760245D8E05003BDBDB /* LoveTester */ = {
 			isa = PBXGroup;
 			children = (
-				0C51CBF0246B41F400C25286 /* DataModel */,
 				0C290E4F245DA036009DAADD /* Fonts */,
 				0C290E4E245D9209009DAADD /* Controller */,
 				0C290E4D245D91FE009DAADD /* View */,
@@ -148,6 +176,52 @@
 				0C51CBF1246B420D00C25286 /* Item.swift */,
 			);
 			path = DataModel;
+			sourceTree = "<group>";
+		};
+		0CC3468E24BDE7380062094D /* TestModel */ = {
+			isa = PBXGroup;
+			children = (
+				0C9FC9E82469881D00D54F4E /* TestBrain.swift */,
+				0C9FC9E424696A0B00D54F4E /* TestManager.swift */,
+			);
+			path = TestModel;
+			sourceTree = "<group>";
+		};
+		0CC3468F24BDE7A00062094D /* AdviceModel */ = {
+			isa = PBXGroup;
+			children = (
+				0C58165C246F2506004F7F58 /* AdviceItem.swift */,
+			);
+			path = AdviceModel;
+			sourceTree = "<group>";
+		};
+		0CC3469024BDE7B40062094D /* DescriptionModel */ = {
+			isa = PBXGroup;
+			children = (
+				0C84531E248C23F500179B9F /* Description.swift */,
+			);
+			path = DescriptionModel;
+			sourceTree = "<group>";
+		};
+		0CC3469124BDE7D30062094D /* Authentication */ = {
+			isa = PBXGroup;
+			children = (
+				0CF4561724609CEA004CBEC1 /* RegisterViewController.swift */,
+				0CF4561924609D09004CBEC1 /* LoginViewController.swift */,
+				0CC3468C24B63C210062094D /* LoginViaGoogleAndFacebook.swift */,
+			);
+			path = Authentication;
+			sourceTree = "<group>";
+		};
+		0CC3469224BDE7F40062094D /* Test */ = {
+			isa = PBXGroup;
+			children = (
+				0CF4561F246207E7004CBEC1 /* MenuViewController.swift */,
+				0C9FC9E2246966BD00D54F4E /* TestViewController.swift */,
+				0C581662246F2B06004F7F58 /* AdviceViewController.swift */,
+				0C148BF42479E98400DD6B87 /* StatisticsViewController.swift */,
+			);
+			path = Test;
 			sourceTree = "<group>";
 		};
 		14609C5A605AEA0561B8606C /* Frameworks */ = {
@@ -179,6 +253,8 @@
 				0C4D975B245D8E05003BDBDB /* Frameworks */,
 				0C4D975C245D8E05003BDBDB /* Resources */,
 				8A8EABDCF0332F6FBD454BDC /* [CP] Embed Pods Frameworks */,
+				0C148BF32479E94000DD6B87 /* Embed Frameworks */,
+				8823A8EC589F300E0F445B5E /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -232,6 +308,7 @@
 				0CF4561E2460DDD2004CBEC1 /* GoogleService-Info.plist in Resources */,
 				0C4D9769245D8E05003BDBDB /* Main.storyboard in Resources */,
 				0C290E51245DA044009DAADD /* AbrilFatface-Regular.ttf in Resources */,
+				0CB49FD1257D7010003475C5 /* AdviceCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -260,6 +337,23 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		8823A8EC589F300E0F445B5E /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-LoveTester/Pods-LoveTester-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-LoveTester/Pods-LoveTester-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-LoveTester/Pods-LoveTester-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		8A8EABDCF0332F6FBD454BDC /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -284,11 +378,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0CC3469424BE015F0062094D /* Alert.swift in Sources */,
 				0C9FC9E3246966BD00D54F4E /* TestViewController.swift in Sources */,
 				0C4D9766245D8E05003BDBDB /* ViewController.swift in Sources */,
 				0CF45620246207E7004CBEC1 /* MenuViewController.swift in Sources */,
+				0CB49FD0257D7010003475C5 /* AdviceCell.swift in Sources */,
 				0C4D9762245D8E05003BDBDB /* AppDelegate.swift in Sources */,
+				0CC3468D24B63C210062094D /* LoginViaGoogleAndFacebook.swift in Sources */,
+				0C8A4D922481A7E9006E87CF /* Spinner.swift in Sources */,
 				0C4D9764245D8E05003BDBDB /* SceneDelegate.swift in Sources */,
+				0C84531F248C23F500179B9F /* Description.swift in Sources */,
 				0CF4561A24609D09004CBEC1 /* LoginViewController.swift in Sources */,
 				0C58165D246F2506004F7F58 /* AdviceItem.swift in Sources */,
 				0C51CBF2246B420D00C25286 /* Item.swift in Sources */,
@@ -297,6 +396,7 @@
 				0C9FC9EB246A0B0300D54F4E /* ButtonExtension.swift in Sources */,
 				0C9FC9E524696A0B00D54F4E /* TestManager.swift in Sources */,
 				0C9FC9E92469881D00D54F4E /* TestBrain.swift in Sources */,
+				0C148BF52479E98400DD6B87 /* StatisticsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
